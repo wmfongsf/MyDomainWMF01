@@ -4,16 +4,19 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>My Domain</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
 	<style>
+		   
 		   body { 
-		     background: url(./GWL-Side.png) no-repeat center center fixed; 
 		     -webkit-background-size: cover;
 		     -moz-background-size: cover;
 		     -o-background-size: cover;
 		     background-size: cover;
 			 font-family: 'Roboto Condensed', sans-serif;
 		   }
-		   
+
+
 		   .content-top {
 			   font-size:24px;
 			   font-weight:700;
@@ -42,8 +45,29 @@
 		   }
 	</style>
 </head>
-<body>
-		
-	
+<body bgcolor="#FFFFFF">
+<div><img src="./GWL-XLarge.png" width="600"/></div>
+<div class="carouselone">
+  <div><img src="./GWL-Side04.png" width="600"/></div>
+  <div><img src="./GWL-Side03.png" width="600"/></div>
+  <div><img src="./GWL-Side02.png" width="600"/></div>
+  <div><img src="./GWL-Side01.png" width="600"/></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carouselone').slick({
+      	adaptiveHeight: true,
+      	autoplay: true,
+      	autoplaySpeed: 3000,
+      	infinite: true,
+      	fade: true,
+      	pauseOnHover: true,
+      	slidesPerRow: 1
+      });
+    });
+  </script>
 </body>
 </html>
